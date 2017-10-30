@@ -1,0 +1,55 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+
+#load-page-seocips {
+  padding: 0;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px #084;
+  background: radial-gradient(center, circle cover,  transparent 0%, transparent 50%, rgba(0,0,0,0.2) 100%);
+  width:100%; height:100%;  position:absolute; left:0; top:0; z-index:+100000; overflow:hidden; text-align:center;background: #222;
+}
+
+.loading {
+  font-size: 50px;padding-top: 3%;
+  font-family: &quot;Audiowide&quot;;
+}
+
+.gears {padding-top: 1%;padding-bottom: 1%;
+  animation: rotate1 6s linear infinite;
+}
+
+.entypo-cog {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: 210px;
+  font-family: &quot;entypo&quot;;
+}
+
+.entypo-cog:nth-child(1) {
+  animation: rotate1 3s linear infinite;
+}
+
+.entypo-cog:nth-child(2) {
+  margin-top: 30px;
+  transform: rotate(22.5deg);
+  animation: rotate2 3s linear infinite;
+}
+
+@keyframes rotate1 {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotate2 {
+  from { transform: rotate(-22.5deg) }
+  to { transform: rotate(-382.5deg); }
+}
+
+  @media screen and (max-width:730px) {.loading {
+  font-size: 30px;
+} .gears {padding-top: 20%;padding-bottom: 20%;
+} .entypo-cog {
+      font-size: 110px;}
+}
